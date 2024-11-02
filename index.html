@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-group">
+            <input type="text" id="todoInput" placeholder="Enter a task">
+            <button onclick="addAtStart()" class="btn add">Add at the Start</button>
+            <button onclick="addAtEnd()" class="btn add">Add at the End</button>
+            <button onclick="removeFromStart()" class="btn remove">Remove from Start</button>
+            <button onclick="removeFromEnd()" class="btn remove">Remove from End</button>
+        </div>
+        <ul id="todoList" class="todo-list"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
